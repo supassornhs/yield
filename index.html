@@ -890,36 +890,36 @@
 <!-- INTEREST MODAL -->
 <div id="interest-modal" style="display:none;position:fixed;inset:0;z-index:1000;align-items:center;justify-content:center;padding:24px;">
   <div id="modal-backdrop" onclick="closeModal()" style="position:absolute;inset:0;background:rgba(0,0,0,0.5);backdrop-filter:blur(4px);"></div>
-  <div style="position:relative;background:#fff;border-radius:20px;width:100%;max-width:480px;max-height:90vh;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,0.18);"><div style="overflow-y:auto;max-height:90vh;padding:40px 36px;">
-    <button onclick="closeModal()" style="position:absolute;top:16px;right:20px;background:none;border:none;font-size:1.5rem;cursor:pointer;color:#888;line-height:1;">×</button>
-    <h3 style="font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:6px;">Get early access</h3>
-    <p style="font-size:0.9rem;color:#666;margin-bottom:28px;">We'll reach out to set up your free account.</p>
-    <form id="interest-form" onsubmit="submitForm(event)" action="https://formspree.io/f/mqenpwnk" method="POST" style="display:flex;flex-direction:column;gap:16px;">
+  <div style="position:relative;background:#fff;border-radius:20px;width:100%;max-width:480px;box-shadow:0 24px 80px rgba(0,0,0,0.18);padding:28px 32px;">
+    <button onclick="closeModal()" style="position:absolute;top:14px;right:18px;background:none;border:none;font-size:1.5rem;cursor:pointer;color:#888;line-height:1;">×</button>
+    <h3 style="font-size:1.3rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:4px;">Get early access</h3>
+    <p style="font-size:0.85rem;color:#666;margin-bottom:16px;">We'll reach out to set up your free account.</p>
+    <form id="interest-form" onsubmit="submitForm(event)" action="https://formspree.io/f/mqenpwnk" method="POST" style="display:flex;flex-direction:column;gap:10px;">
       <div>
-        <label style="display:block;font-size:0.8rem;font-weight:600;color:#444;margin-bottom:6px;">Your name</label>
-        <input type="text" name="name" required placeholder="Jane Smith" style="width:100%;padding:12px 14px;border:1.5px solid #E0E0E0;border-radius:10px;font-size:0.95rem;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#E62A1E'" onblur="this.style.borderColor='#E0E0E0'">
+        <label style="display:block;font-size:0.75rem;font-weight:600;color:#444;margin-bottom:4px;">Your name</label>
+        <input type="text" name="name" required placeholder="Jane Smith" style="width:100%;padding:9px 12px;border:1.5px solid #E0E0E0;border-radius:8px;font-size:0.9rem;outline:none;" onfocus="this.style.borderColor='#E62A1E'" onblur="this.style.borderColor='#E0E0E0'">
       </div>
       <div>
-        <label style="display:block;font-size:0.8rem;font-weight:600;color:#444;margin-bottom:6px;">Business name</label>
-        <input type="text" name="business" required placeholder="HolyShred SF" style="width:100%;padding:12px 14px;border:1.5px solid #E0E0E0;border-radius:10px;font-size:0.95rem;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#E62A1E'" onblur="this.style.borderColor='#E0E0E0'">
+        <label style="display:block;font-size:0.75rem;font-weight:600;color:#444;margin-bottom:4px;">Business name</label>
+        <input type="text" name="business" required placeholder="HolyShred SF" style="width:100%;padding:9px 12px;border:1.5px solid #E0E0E0;border-radius:8px;font-size:0.9rem;outline:none;" onfocus="this.style.borderColor='#E62A1E'" onblur="this.style.borderColor='#E0E0E0'">
       </div>
       <div>
-        <label style="display:block;font-size:0.8rem;font-weight:600;color:#444;margin-bottom:6px;">Phone number</label>
-        <input type="tel" name="phone" required placeholder="+1 (415) 000-0000" style="width:100%;padding:12px 14px;border:1.5px solid #E0E0E0;border-radius:10px;font-size:0.95rem;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#E62A1E'" onblur="this.style.borderColor='#E0E0E0'">
+        <label style="display:block;font-size:0.75rem;font-weight:600;color:#444;margin-bottom:4px;">Phone number</label>
+        <input type="tel" name="phone" required placeholder="+1 (415) 000-0000" style="width:100%;padding:9px 12px;border:1.5px solid #E0E0E0;border-radius:8px;font-size:0.9rem;outline:none;" onfocus="this.style.borderColor='#E62A1E'" onblur="this.style.borderColor='#E0E0E0'">
       </div>
       <div>
-        <label style="display:block;font-size:0.8rem;font-weight:600;color:#444;margin-bottom:6px;">Email</label>
-        <input type="email" name="email" required placeholder="jane@holyshred.com" style="width:100%;padding:12px 14px;border:1.5px solid #E0E0E0;border-radius:10px;font-size:0.95rem;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#E62A1E'" onblur="this.style.borderColor='#E0E0E0'">
+        <label style="display:block;font-size:0.75rem;font-weight:600;color:#444;margin-bottom:4px;">Email</label>
+        <input type="email" name="email" required placeholder="jane@holyshred.com" style="width:100%;padding:9px 12px;border:1.5px solid #E0E0E0;border-radius:8px;font-size:0.9rem;outline:none;" onfocus="this.style.borderColor='#E62A1E'" onblur="this.style.borderColor='#E0E0E0'">
       </div>
       <div>
-        <label style="display:block;font-size:0.8rem;font-weight:600;color:#444;margin-bottom:10px;">Interested in</label>
-        <div style="display:flex;gap:12px;">
-          <button type="button" id="tier-free" onclick="selectTier('Free')" style="flex:1;padding:11px;border:2px solid #E0E0E0;border-radius:10px;background:#fff;font-size:0.95rem;font-weight:700;cursor:pointer;transition:all 0.2s;color:#444;">Free</button>
-          <button type="button" id="tier-pro" onclick="selectTier('Pro')" style="flex:1;padding:11px;border:2px solid #E0E0E0;border-radius:10px;background:#fff;font-size:0.95rem;font-weight:700;cursor:pointer;transition:all 0.2s;color:#444;">Pro</button>
+        <label style="display:block;font-size:0.75rem;font-weight:600;color:#444;margin-bottom:6px;">Interested in</label>
+        <div style="display:flex;gap:10px;">
+          <button type="button" id="tier-free" onclick="selectTier('Free')" style="flex:1;padding:9px;border:2px solid #E0E0E0;border-radius:8px;background:#fff;font-size:0.9rem;font-weight:700;cursor:pointer;color:#444;">Free</button>
+          <button type="button" id="tier-pro" onclick="selectTier('Pro')" style="flex:1;padding:9px;border:2px solid #E0E0E0;border-radius:8px;background:#fff;font-size:0.9rem;font-weight:700;cursor:pointer;color:#444;">Pro</button>
         </div>
         <input type="hidden" name="tier" id="tier-value" required>
       </div>
-      <button type="submit" style="margin-top:8px;background:#E62A1E;color:#fff;font-size:1rem;font-weight:800;padding:15px;border:none;border-radius:10px;cursor:pointer;text-transform:uppercase;letter-spacing:0.05em;transition:background 0.2s;" onmouseover="this.style.background='#C42318'" onmouseout="this.style.background='#E62A1E'">Send</button>
+      <button type="submit" style="margin-top:4px;background:#E62A1E;color:#fff;font-size:0.95rem;font-weight:800;padding:12px;border:none;border-radius:8px;cursor:pointer;text-transform:uppercase;letter-spacing:0.05em;" onmouseover="this.style.background='#C42318'" onmouseout="this.style.background='#E62A1E'">Send</button>
     </form>
     <div id="form-success" style="display:none;text-align:center;padding:20px 0;">
       <div style="font-size:2.5rem;margin-bottom:12px;">🎉</div>
